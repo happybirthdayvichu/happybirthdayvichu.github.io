@@ -10,9 +10,11 @@ function onloadevent() {
     }
 }
 function onloadeventBuddies() {
+    var cnt = 1;
     for (row=0; row<4; row++) {
         for (i=1;i<=11;i++) {
-            document.getElementById("brow"+(row+1)).innerHTML += "<img src='buddies/"+(i+(10*row))+".jpg' width='100%'>";
+            document.getElementById("brow"+(row+1)).innerHTML += "<img src='buddies/"+(cnt)+".jpg' width='100%'>";
+            cnt += 1;
         }
     }
 }
